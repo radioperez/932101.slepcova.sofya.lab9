@@ -58,4 +58,5 @@ const calculateButton = document.getElementById("calculate");
 calculateButton.addEventListener('click', function() {
 	let curExpression = display.value;
 	display.value = eval(curExpression);
+	if (display.value.includes('.')) hasPoint = true;
 });
